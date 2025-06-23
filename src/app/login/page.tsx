@@ -7,7 +7,7 @@ export default function Loginpage(){
         <input type="email" /><br />
         <label htmlFor="">Password</label>
         <input type="password" /><br />
-        <input type="button" />
+        <input type="button" value="submit" />
     </form>
 </div>
     )
