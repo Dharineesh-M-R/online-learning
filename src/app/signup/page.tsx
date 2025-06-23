@@ -20,7 +20,7 @@ export default function signuppage(){
                 <input type="email" /><br />
                 <label htmlFor="">Password</label>
                 <input type="password" /><br />
-                <input type="button" />
+                <input type="submit" name="Submit" />
             </form>
         </div>
     )
