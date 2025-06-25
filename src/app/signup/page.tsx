@@ -17,11 +17,11 @@ export default function signuppage(){
     }
     return (
         <div>
-            <h1>Signup</h1>
-            <form action="">
+            <h1 className="text-center">Signup</h1>
+            <form className="text-center">
                 <label htmlFor="username">Username :</label> <br />
                 <input 
-                className="p-2 text-black border border-m bg-white placeholder-red-500"
+                className="p-2 rounded text-black border border-m bg-white placeholder-red-500"
                 id="username" 
                 type="text" 
                 value={user.username}
@@ -29,7 +29,7 @@ export default function signuppage(){
                 placeholder="Username"/> <br />
                 <label htmlFor="password">Password :</label> <br />
                 <input 
-                className="p-2 text-black border border-m bg-white placeholder-red-500"
+                className="p-2 rounded text-black border border-m bg-white placeholder-red-500"
                 id="password" 
                 type="password" 
                 value={user.password}
@@ -37,14 +37,15 @@ export default function signuppage(){
                 placeholder="Password"/> <br />
                 <label htmlFor="email">Email :</label> <br />
                 <input 
-                className="p-2 text-black border border-m bg-white placeholder-red-500"
+                className="p-2 rounded text-black border border-m bg-white placeholder-red-500"
                 id="email" 
                 type="email" 
                 value={user.email}
                 onChange={(e)=>setUser({...user, email: e.target.value})}
                 placeholder="Email"/> <br />
                 
-                <input type="submit" name="Submit" />
+                <button onClick={onSignup}>Signup</button> <br />
+                <Link href="/login">Visit login page</Link>
             </form>
         </div>
     )
