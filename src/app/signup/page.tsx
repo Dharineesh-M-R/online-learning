@@ -3,8 +3,8 @@ import Link from "next/link";
 import React from "react";
 import {useRouter} from "next/navigation";
 import {Axios} from "axios";
-
-
+import { connect } from "@/dbconfig/dbconfig";
+import { signUpUser } from "@/dbconfig/signupuser";
 
 export default function signuppage(){
     const [user, setUser] = React.useState({
@@ -12,9 +12,9 @@ export default function signuppage(){
         password:"",
         username:"",
     })
-    const onSignup = async () => {
-
-    }
+    const handleSignup = async () => {
+    await signUpUser(email, password, roleId);
+  };
     return (
         <div>
             <h1 className="text-center">Signup</h1>
