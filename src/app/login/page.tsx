@@ -1,3 +1,5 @@
+'use client';
+import Link from 'next/link';
 export default function LoginPage() {
   return (
     <>
@@ -14,7 +16,7 @@ export default function LoginPage() {
           <label htmlFor="password">Password</label>
           <input type="password" id="password" /><br />
 
-          <input type="submit" value="Submit" />
+          <input type="submit" value="Submit" /><br />
         </form>
       </main>
 
